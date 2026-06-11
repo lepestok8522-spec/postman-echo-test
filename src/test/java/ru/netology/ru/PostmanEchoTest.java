@@ -32,7 +32,7 @@ public class PostmanEchoTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("invalid", equalTo(requestBody));
+                .body("data", equalTo(requestBody));
     }
 
 }
